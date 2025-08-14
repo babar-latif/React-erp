@@ -83,5 +83,35 @@ Productivity: DataToolbar + ColumnVisibility + BulkActions + Calendar + Attachme
 
 Digital stamp/sign: client stamp stub, server sign endpoint (future).
 
+## AI Agent Integration (2025-08-14)
+- Added `openai` and `axios` dependencies.
+- Created `src/agents/aiAgent.ts` for OpenAI API interaction.
+- Implemented `src/components/AIAgent.tsx` with:
+  - Text input and Ask button
+  - File upload functionality
+  - Chat history
+  - Placeholder for connecting to ERP data
 
 - Validate versioning across all modules: check for `Module.manifest.json` and `CHANGELOG.md`, confirm frontend `registry.ts` and backend `version.routes.ts` are implemented and consistent. Added backend version API 2025-08-12.
+
+## InstructiontoAiAgent.md Updates
+
+### AI Agent Integration (2025-08-14)
+- Added `openai` and `axios` dependencies.
+- Created `src/agents/aiAgent.ts` for OpenAI API interaction.
+- Implemented `src/components/AIAgent.tsx` with:
+  - Text input and Ask button
+  - File upload functionality
+  - Chat history
+  - Placeholder for connecting to ERP data
+
+### Versioning Validation
+- Confirmed presence of `Module.manifest.json` and `CHANGELOG.md` in all modules
+- Verified frontend `registry.ts` and backend `version.routes.ts` are implemented and consistent
+- Added backend version API `/api/v1/version` (2025-08-12)
+
+### Auth & Tenancy Updates
+- Login flow added before dashboard
+- JWT-based auth with access + refresh tokens
+- `X-Tenant-Id` header enforced across frontend and backend
+- AuthContext and audit logging integrated

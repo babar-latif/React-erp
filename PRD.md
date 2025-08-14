@@ -44,5 +44,10 @@ Deliver a multi-tenant, modular ERP with a fast, configurable Dashboard, strong 
 - Realtime collaboration
 - Server-side PDF signing (stub only)
 
+## AI Agent Integration (2025-08-14)
+- Integrated a basic AI agent using OpenAI API.
+- Added file upload functionality to the AI Agent.
+- Implemented chat history for the AI Agent.
+- Added placeholder for connecting to ERP data.
 
 - Backend exposes `/api/v1/version` endpoint returning app and per-module versions (added 2025-08-12).
